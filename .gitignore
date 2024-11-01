@@ -1,0 +1,32 @@
+.env
+temp/
+temp
+# binary
+*.exe
+*.exe~
+*.dll
+*.dylib
+# dependency
+/vendor/
+/bin/
+/pkg/
+# editor files
+.DS_Store
+.Thumbs.db
+# temp files config
+.idea/
+.iml
+.vscode/
+*.swp
+*.swo
+# cache files
+go.sum
+# logs
+*.logs
+*.log
+# key files
+*.key
+*.pem
+# Test files
+*.out
+*.test

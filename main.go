@@ -1,7 +1,15 @@
 package main
 
-import "fmt"
+import (
+	"net/http"
+
+	"github.com/labstack/echo/v4"
+)
 
 func main() {
-	fmt.Println("Go run")
+	app := echo.New()
+	app.GET("/", func(c echo.Context) error {
+		return c.String(http.StatusOK, "main Go app")
+	})
+	app.Logger.Fatal(app.Start(":1011"))
 }
